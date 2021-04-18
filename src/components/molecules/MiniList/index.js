@@ -1,21 +1,9 @@
 import React from 'react';
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 
-const Index = ({
-  name,
-  username,
-  email,
-  address,
-  phone,
-  firstName,
-  lastName,
-}) => {
+const Index = ({email, firstName, lastName}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.outext}>
-        Name:
-        <Text style={styles.intext}> {name}</Text>
-      </Text>
       <Text style={styles.outext}>
         First Name:
         <Text style={styles.intext}> {firstName}</Text>
@@ -25,20 +13,8 @@ const Index = ({
         <Text style={styles.intext}> {lastName}</Text>
       </Text>
       <Text style={styles.outext}>
-        Username:
-        <Text style={styles.intext}> {username}</Text>
-      </Text>
-      <Text style={styles.outext}>
         Email:
         <Text style={styles.intext}> {email}</Text>
-      </Text>
-      <Text style={styles.outext}>
-        Address:
-        <Text style={styles.intext}> {address}</Text>
-      </Text>
-      <Text style={styles.outext}>
-        Phone:
-        <Text style={styles.intext}> {phone}</Text>
       </Text>
     </View>
   );
